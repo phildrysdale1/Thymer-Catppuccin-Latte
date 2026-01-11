@@ -1,0 +1,165 @@
+/* Catppuccin Frappé theme by phild - based on Mocha theme by jd_thymer and Niklas */
+html[data-theme="basic-catppuccin-frappe"] {
+    color-scheme: dark;
+
+    /* Base backgrounds - Catppuccin Frappé's cool darks */
+    --color-bg-50: #b5bfe2;   /* Subtext1 */
+    --color-bg-100: #a5adce;  /* Subtext0 */
+    --color-bg-150: #949cbb;  /* Overlay2 */
+    --color-bg-200: #838ba7;  /* Overlay1 */
+    --color-bg-300: #737994;  /* Overlay0 */
+    --color-bg-400: #626880;  /* Surface2 */
+    --color-bg-500: #51576d;  /* Surface1 */
+    --color-bg-600: #414559;  /* Surface0 */
+    --color-bg-700: #303446;  /* Base */
+    --color-bg-800: #292c3c;  /* Mantle */
+    --color-bg-900: #232634;  /* Crust */
+    --color-bg-950: #1a1d2a;  /* Deeper crust */
+    --color-bg-500-50: rgba(81, 87, 109, 0.5);
+    --color-bg-950-50: rgba(26, 29, 42, 0.65);
+
+    /* Mauve primary - Catppuccin's signature purple */
+    --color-primary-50: #faf5ff;
+    --color-primary-100: #f3e8fe;
+    --color-primary-200: #e9d5fd;
+    --color-primary-300: #d8b4fc;
+    --color-primary-400: #ca9ee6;  /* Frappé Mauve */
+    --color-primary-500: #b88cd9;
+    --color-primary-600: #a67acc;
+    --color-primary-700: #9468bf;
+    --color-primary-800: #8256b2;
+    --color-primary-900: #6f44a5;
+    --color-primary-950: #5d3298;
+    --color-primary-400-70: rgba(202, 158, 230, 0.7);
+    --color-primary-950-20: rgba(93, 50, 152, 0.2);
+    --color-primary-text-100: #303446;
+
+    /* Text - Catppuccin Frappé's soft whites */
+    --color-text-50: #c6d0f5;   /* Text */
+    --color-text-100: #ffffff;  /* White */
+    --color-text-200: #c6d0f5;  /* Subtext1 */
+    --color-text-300: #c6d0f5;  /* Subtext0 */
+    --color-text-400: #c6d0f5;  /* Overlay2 */
+    --color-text-500: #c6d0f5;  /* Overlay1 */
+    --color-text-600: #737994;  /* Overlay0 */
+    --color-text-700: #a6d189;  /* Green */
+    --color-text-800: #c6d0f5;  /* Surface1 */
+    --color-text-900: #414559;  /* Surface0 */
+    --color-text-950: #babbf1;  /* Lavender */
+
+    /* Semantic colors from Catppuccin palette */
+    --text-ok: #a6d189;         /* Green */
+    --text-status-online: #a6d189;
+    --text-warning: #ef9f76;    /* Peach */
+    --text-error: #e78284;      /* Red */
+    --bg-alert: #e78284;
+    --fg-alert: #303446;
+
+    /* Links - Catppuccin Blue */
+    --link-color: #8caaee;
+    --link-hover-color: #babbf1;  /* Lavender */
+    --ed-link-color: #8caaee;
+    --ed-link-hover-color: #babbf1;
+
+    /* Hashtags - Catppuccin Teal */
+    --ed-hashtag-color: #81c8be;
+    --ed-hashtag-bg: rgba(129, 200, 190, 0.15);
+
+    /* Mentions - Catppuccin Pink */
+    --ed-mention-color: #f4b8e4;
+    --ed-mention-bg: rgba(244, 184, 228, 0.15);
+    --ed-mention-hover-bg: rgba(244, 184, 228, 0.25);
+    --ed-mention-hover-color: #f4b8e4;
+
+    /* Dates - Catppuccin Sapphire */
+    --ed-datetime-color: #85c1dc;
+    --ed-datetime-bg: rgba(133, 193, 220, 0.15);
+
+    /* Checkboxes */
+    --ed-check-div-border: #ca9ee6;
+    --ed-check-div-hover-border: #d8b4fc;
+    --ed-check-done-bg: #a6d189;
+    --ed-check-done-fg: #303446;
+
+    /* Selections - soft Mauve */
+    --selection-bg: rgba(202, 158, 230, 0.35);
+    --selection-fg: #c6d0f5;
+    --ed-selection-self-bg: rgba(202, 158, 230, 0.25);
+    --ed-selection-blurred-bg: rgba(202, 158, 230, 0.1);
+
+    /* Quotes - Catppuccin Lavender */
+    --ed-quote-border-color: #babbf1;
+
+    /* Code blocks */
+    --ed-code-border: #51576d;
+    --ed-code-bg: rgba(65, 69, 89, 0.5);
+
+    /* Cards with Catppuccin surfaces */
+    --cards-bg: #292c3c;
+    --cards-hover-bg: #303446;
+    --cards-border-color: #414559;
+    --cards-border-color-focused: #51576d;
+
+    /* Sidebar */
+    --side-bg-active-focus: #ca9ee6;
+    --side-fg-active-focus: #303446;
+    --sidebar-bg-hover: #414559;
+
+    /* Command palette */
+    --cmdpal-bg-color: #303446;
+    --cmdpal-selected-bg-color: #ca9ee6;
+    --cmdpal-selected-fg-color: #303446;
+    --cmdpal-hover-bg-color: #414559;
+    --cmdpal-border-color: #51576d;
+
+    /* Inputs */
+    --input-bg-color: #292c3c;
+    --input-border-color: #51576d;
+    --input-border-focus: 1px solid #ca9ee6;
+    --input-border-shadow: 0 0 8px rgba(202, 158, 230, 0.4);
+
+    /* Buttons */
+    --button-primary-bg-color: #ca9ee6;
+    --button-primary-fg-color: #303446;
+    --button-primary-bg-hover-color: #d8b4fc;
+    --button-bg-color: #414559;
+    --button-border-color: #51576d;
+    --button-bg-hover-color: #51576d;
+
+    /* Cool shadows */
+    --color-shadow: rgba(0, 0, 0, 0.25);
+    --color-shadow-cards: 0 4px 6px rgba(0, 0, 0, 0.2);
+    --color-shadow-hover: 0 6px 12px rgba(0, 0, 0, 0.3);
+
+    /* Logo with Mauve glow */
+    --logo-color: #ca9ee6;
+    --logo-glow-shadow: 0 0 15px rgba(202, 158, 230, 0.5), 0 0 30px rgba(202, 158, 230, 0.3);
+
+    /* Enums using Catppuccin Frappé colors */
+    --enum-red-bg: rgba(231, 130, 132, 0.25);
+    --enum-red-fg: #e78284;
+    --enum-orange-bg: rgba(239, 159, 118, 0.25);
+    --enum-orange-fg: #ef9f76;
+    --enum-yellow-bg: rgba(229, 200, 144, 0.25);
+    --enum-yellow-fg: #e5c890;
+    --enum-green-bg: rgba(166, 209, 137, 0.25);
+    --enum-green-fg: #a6d189;
+    --enum-cyan-bg: rgba(129, 200, 190, 0.25);
+    --enum-cyan-fg: #81c8be;
+    --enum-blue-bg: rgba(140, 170, 238, 0.25);
+    --enum-blue-fg: #8caaee;
+    --enum-purple-bg: rgba(202, 158, 230, 0.25);
+    --enum-purple-fg: #ca9ee6;
+    --enum-pink-bg: rgba(244, 184, 228, 0.25);
+    --enum-pink-fg: #f4b8e4;
+
+    /* Carets/Cursor */
+    --ed-caret-self-radius: 2px;
+    --ed-caret-self-border-width: 0px;
+    --ed-caret-self-background: color-mix(in srgb, currentColor 70%, transparent);
+    --ed-caret-self-box-shadow: 0 0 2px currentColor;
+
+    /* Note blocks - using Frappe Yellow */
+    --ed-block-note-bg: color-mix(in srgb, transparent 60%, #e5c890 40%);
+    --ed-block-note-border: #e5c890;
+}
